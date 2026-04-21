@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://dunofbjrm2a3m"]
+
+[ext_resource type="Texture2D" uid="uid://k2exwtaxogbb" path="res://assets/platformerGraphicsDeluxe_Updated/Items/buttonGreen.png" id="1_3lfx6"]
+[ext_resource type="Script" uid="uid://dlnplopxj03ne" path="res://escenas/boton.gd" id="1_48mwk"]
+[ext_resource type="Texture2D" uid="uid://ce7x4h2osenwc" path="res://assets/platformerGraphicsDeluxe_Updated/Items/buttonGreen_pressed.png" id="2_6kupy"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0gh5h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_3lfx6")
+}],
+"loop": true,
+"name": &"sin_tocar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6kupy")
+}],
+"loop": true,
+"name": &"tocado",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0mrrl"]
+size = Vector2(36, 24)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lfx6"]
+size = Vector2(36, 24)
+
+[node name="Node2D" type="StaticBody2D" unique_id=2022547439 groups=["botones"]]
+script = ExtResource("1_48mwk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1609534900]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_0gh5h")
+animation = &"sin_tocar"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2081911289]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1881379828]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_0mrrl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1395885366]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_3lfx6")
+disabled = true
+
+[connection signal="body_entered" from="Area2D" to="." method="boton_apretado"]
+[connection signal="body_exited" from="Area2D" to="." method="boton_no_apretado"]

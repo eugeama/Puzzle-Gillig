@@ -1,0 +1,89 @@
+[gd_scene format=3 uid="uid://xwcda3vb7n2t"]
+
+[ext_resource type="Texture2D" uid="uid://m4qvbw3tyh3" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_walk/PNG/p1_walk03.png" id="1_cvhml"]
+[ext_resource type="Script" uid="uid://5e5ieynuo6kx" path="res://scripts/jugador.gd" id="1_gjfif"]
+[ext_resource type="Texture2D" uid="uid://cs30uvnyk52a4" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_walk/PNG/p1_walk05.png" id="2_btb33"]
+[ext_resource type="Texture2D" uid="uid://385euc3xhyky" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_duck.png" id="3_qw2bf"]
+[ext_resource type="Texture2D" uid="uid://djawcweke0u1h" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_hurt.png" id="4_g5h5a"]
+[ext_resource type="Texture2D" uid="uid://i5m4ab51wcy" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_stand.png" id="5_o2m60"]
+[ext_resource type="Texture2D" uid="uid://d3jha3e0karx2" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_jump.png" id="6_hcpjn"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xwd11"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cvhml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_btb33")
+}],
+"loop": false,
+"name": &"caminando",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_qw2bf")
+}],
+"loop": true,
+"name": &"mover caja",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_g5h5a")
+}],
+"loop": true,
+"name": &"pegar",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_o2m60")
+}],
+"loop": true,
+"name": &"quieta",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_hcpjn")
+}],
+"loop": true,
+"name": &"saltar",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4mp40"]
+size = Vector2(43, 56)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gjfif"]
+size = Vector2(58, 56)
+
+[node name="jugador" type="CharacterBody2D" unique_id=1401226523]
+motion_mode = 1
+script = ExtResource("1_gjfif")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2104447874]
+position = Vector2(-2, 0)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_xwd11")
+animation = &"caminando"
+frame = 1
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888892625]
+position = Vector2(-2.5, 0)
+shape = SubResource("RectangleShape2D_4mp40")
+
+[node name="rango_de_agarre" type="Area2D" parent="." unique_id=437697604 groups=["botones"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="rango_de_agarre" unique_id=1481825814]
+position = Vector2(-3, 0)
+shape = SubResource("RectangleShape2D_gjfif")
+
+[node name="agarre_caja" type="Marker2D" parent="." unique_id=1002698062]
+position = Vector2(19, 0)
+
+[connection signal="body_entered" from="rango_de_agarre" to="." method="_on_rango_de_agarre_body_entered"]
+[connection signal="body_exited" from="rango_de_agarre" to="." method="_on_rango_de_agarre_body_exited"]

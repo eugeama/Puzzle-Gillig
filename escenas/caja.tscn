@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dm1gw7q54w35j"]
+
+[ext_resource type="Texture2D" uid="uid://crraiob2bya0e" path="res://assets/platformerGraphicsDeluxe_Updated/Tiles/box.png" id="1_hv7ok"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hv7ok"]
+size = Vector2(70, 70)
+
+[node name="Caja" type="RigidBody2D" unique_id=1390781774]
+input_pickable = true
+gravity_scale = 0.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=590850290]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_hv7ok")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1015120746]
+light_mask = 3
+visibility_layer = 2
+scale = Vector2(0.6, 0.6)
+shape = SubResource("RectangleShape2D_hv7ok")
