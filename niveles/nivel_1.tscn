@@ -67,7 +67,7 @@ position = Vector2(498, 111)
 [node name="Caja3" parent="." unique_id=952561949 instance=ExtResource("5_ylyhu")]
 position = Vector2(660, 571)
 
-[node name="jugador" parent="." unique_id=1401226523 instance=ExtResource("1_oh5vl")]
+[node name="jugador" parent="." unique_id=1401226523 groups=["jugador"] instance=ExtResource("1_oh5vl")]
 position = Vector2(70, 582)
 
 [node name="objetos_conseguidos" parent="." unique_id=710017528 instance=ExtResource("6_jlx04")]

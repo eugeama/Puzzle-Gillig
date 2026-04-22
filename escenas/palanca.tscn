@@ -27,7 +27,7 @@ animations = [{
 size = Vector2(34, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vb1u5"]
-size = Vector2(45, 34)
+size = Vector2(55, 39)
 
 [node name="Palanca" type="StaticBody2D" unique_id=1519791926]
 script = ExtResource("1_vb1u5")
@@ -44,5 +44,8 @@ shape = SubResource("RectangleShape2D_h8xrq")
 [node name="Area2D" type="Area2D" parent="." unique_id=1375270061]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1070692839]
-position = Vector2(1.5, 1)
+position = Vector2(1.5, -1.5)
 shape = SubResource("RectangleShape2D_vb1u5")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_jugador_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

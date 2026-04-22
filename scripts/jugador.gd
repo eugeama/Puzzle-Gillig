@@ -7,8 +7,9 @@ const JUMP_VELOCITY = -400.0
 var agarre: bool = false
 var caja: RigidBody2D
 var objetivo: RigidBody2D
-var veces_presionado = 0
+var veces_presionado: int = 0
 var sosteniendo: bool = false
+var _ignorar_proxima: bool = false
 
 func _physics_process(delta: float) -> void:
 	sumar_presion()
@@ -35,11 +36,17 @@ func _physics_process(delta: float) -> void:
 		agarre_caja.position.x = -abs(agarre_caja.position.x)
 		
 	move_and_slide()
+	
+func ignorar_pulsacion() -> void:
+	_ignorar_proxima = true
 
 func sumar_presion() -> void:
 	if Input.is_action_just_pressed("mover"):
+		if _ignorar_proxima:
+			_ignorar_proxima = false
+			return
 		veces_presionado+=1
-
+		
 func agarrar_caja() -> void:
 	if agarre and caja != null and veces_presionado==1 and not sosteniendo:
 		sosteniendo = true
@@ -66,13 +73,13 @@ func soltar_caja()-> void:
 		agarre= false
 		await get_tree().physics_frame
 		veces_presionado=0
-
+		
 func _on_rango_de_agarre_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D and not sosteniendo:
 		agarre= true
 		caja= body
-
-
+		
+		
 func _on_rango_de_agarre_body_exited(body: Node2D) -> void:
 	if body is RigidBody2D and not sosteniendo:
 		agarre= false
