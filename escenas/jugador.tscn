@@ -76,7 +76,7 @@ frame_progress = 1.0
 position = Vector2(-2.5, 0)
 shape = SubResource("RectangleShape2D_4mp40")
 
-[node name="rango_de_agarre" type="Area2D" parent="." unique_id=437697604 groups=["botones"]]
+[node name="rango_de_agarre" type="Area2D" parent="." unique_id=437697604]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="rango_de_agarre" unique_id=1481825814]
 position = Vector2(-3, 0)

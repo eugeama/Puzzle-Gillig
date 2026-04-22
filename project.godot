@@ -11,17 +11,13 @@ config_version=5
 [application]
 
 config/name="ghost_mischief"
-run/main_scene="uid://bgen3it6835ek"
+run/main_scene="uid://cisg3kk6dqfwh"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
 window/size/viewport_height=640
-
-[global_group]
-
-botones=""
 
 [input]
 

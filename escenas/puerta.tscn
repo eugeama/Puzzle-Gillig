@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://jj5y26u5acsa"]
 
 [ext_resource type="Texture2D" uid="uid://e7n56w04axgk" path="res://assets/platformerGraphicsDeluxe_Updated/Tiles/door_openMid.png" id="1_8gvf5"]
-[ext_resource type="Script" uid="uid://bsbxnhvs05s21" path="res://escenas/puerta.gd" id="1_wtvel"]
+[ext_resource type="Script" uid="uid://bsbxnhvs05s21" path="res://scripts/puerta.gd" id="1_wtvel"]
 [ext_resource type="Texture2D" uid="uid://b352n3di6lb15" path="res://assets/platformerGraphicsDeluxe_Updated/Tiles/door_closedMid.png" id="2_1h0p7"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ufeg8"]

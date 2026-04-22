@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ysvuletkvmho"]
+
+[ext_resource type="Script" uid="uid://cjduiebwocp8r" path="res://scripts/objetos_conseguidos.gd" id="1_a6nww"]
+
+[node name="Objetos" type="Label" unique_id=1441644506]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a6nww")

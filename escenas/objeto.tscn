@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://hr50aae8yrwk"]
+
+[ext_resource type="Script" uid="uid://c87hhm6pjiay4" path="res://scripts/objeto.gd" id="1_8gfep"]
+[ext_resource type="Texture2D" uid="uid://dptrtveodj6d7" path="res://assets/platformerGraphicsDeluxe_Updated/Items/coinGold.png" id="1_bob0o"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8gfep"]
+radius = 13.038404
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qi83n"]
+radius = 13.0
+
+[node name="Objeto" type="StaticBody2D" unique_id=659503827]
+script = ExtResource("1_8gfep")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=604282493]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_bob0o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=432990437]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_8gfep")
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=995258019]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=324940350]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_qi83n")
+
+[connection signal="body_entered" from="Area2D" to="." method="desaparecer"]
