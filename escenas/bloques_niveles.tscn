@@ -1,7 +1,20 @@
 [gd_scene format=3 uid="uid://rj87pfar3m51"]
 
 [ext_resource type="PackedScene" uid="uid://dm1gw7q54w35j" path="res://escenas/caja.tscn" id="1_50uex"]
+[ext_resource type="Texture2D" uid="uid://boatm8otnojm0" path="res://assets/tilesheets/bed2.png" id="1_56dng"]
 [ext_resource type="Texture2D" uid="uid://dxrmb3615pnpv" path="res://assets/tilesheets/grass.png" id="2_50uex"]
+[ext_resource type="Texture2D" uid="uid://uulw5lwscv0x" path="res://assets/tilesheets/rosebush004.png" id="4_lswa7"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lswa7"]
+texture = ExtResource("1_56dng")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_50uex"]
 scenes/1/scene = ExtResource("1_50uex")
@@ -43,10 +56,23 @@ use_texture_padding = false
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_81bn5"]
+texture = ExtResource("4_lswa7")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
 [sub_resource type="TileSet" id="TileSet_81bn5"]
 physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_l3hw6")
 sources/1 = SubResource("TileSetScenesCollectionSource_50uex")
+sources/0 = SubResource("TileSetAtlasSource_lswa7")
+sources/3 = SubResource("TileSetAtlasSource_81bn5")
 
 [node name="TileMapLayer" type="TileMapLayer" unique_id=1049432442]
 tile_set = SubResource("TileSet_81bn5")

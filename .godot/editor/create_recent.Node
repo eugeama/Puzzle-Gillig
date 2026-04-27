@@ -1,7 +1,7 @@
+Panel
 Button
 VBoxContainer
 Label
-Panel
 TextureButton
 TextureRect
 GridContainer
@@ -12,4 +12,3 @@ Sprite2D
 CharacterBody2D
 AnimatedSprite2D
 Node2D
-Area2D
