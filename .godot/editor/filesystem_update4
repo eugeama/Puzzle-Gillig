@@ -1,13 +1,1 @@
-res://escenas/puerta.tscn
-res://pantallas/perdiste.tscn
-res://escenas/NPC.tscn
-res://escenas/jugador.tscn
-res://escenas/fantasma.tscn
-res://niveles/Nivel_5.tscn
-res://escenas/caja.tscn
-res://escenas/bloques_niveles.tscn
-res://pantallas/ganaste.tscn
-res://niveles/Nivel_1.tscn
-res://scripts/nivel_1.gd
-res://scripts/niveles.gd
-res://escenas/boton.tscn
+res://pantallas/pantalla_inicio.tscn

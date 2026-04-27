@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://brxarfls3s4d2"]
 
 [ext_resource type="Script" uid="uid://cmeldnh2dfmny" path="res://scripts/pantalla_inicio.gd" id="1_rh0fq"]
-[ext_resource type="Texture2D" uid="uid://crhu6ycbddecj" path="res://Nueva carpeta/fondos/fondo_inicio.jpg" id="1_yo1tj"]
+[ext_resource type="Texture2D" uid="uid://crhu6ycbddecj" path="res://assets/fondos/fondo_inicio.jpg" id="1_yo1tj"]
 [ext_resource type="FontFile" uid="uid://jg6yqef4mrhc" path="res://fonts/EnchantedLand.otf" id="2_o2dd3"]
 [ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="3_1obj2"]
 
