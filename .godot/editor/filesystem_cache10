@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777287059
+::res://::1777294458
 avanzar_nivel.gd::GDScript::7880673400351278031::1777286993::0::1::::<>Node<><>0<>0<><>::
 ganaste.gd::GDScript::3639903650679691351::1777286993::0::1::::<>Control<><>0<>0<><>::
 icon.svg::CompressedTexture2D::8002855887632378871::1777286993::1777287059::1::::<><><>0<>0<>82cfaef1daf6b4be59bf7f2f45c11141<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://assets/::1777286993
+::res://assets/::1777294796
 ::res://assets/botones/::1777286993
 buttonGreen.png::CompressedTexture2D::757911761867096283::1777286993::1777286993::1::::<><><>0<>0<>8e254af4eaf604f8654dc5af0b57dca6<>res://.godot/imported/buttonGreen.png-7c4f6741dbf570ad6afb6ab9039b7e14.ctex::
 buttonGreen_pressed.png::CompressedTexture2D::5121105518958608354::1777286993::1777286993::1::::<><><>0<>0<>c06d35816308a6b56d848706ba27218f<>res://.godot/imported/buttonGreen_pressed.png-254759460ccb4d9d78c0c37537807b8c.ctex::
@@ -24,11 +24,20 @@ p1_walk03.png::CompressedTexture2D::1362006915317836913::1777286993::1777286993:
 p1_walk05.png::CompressedTexture2D::4221197247326167557::1777286993::1777286993::1::::<><><>0<>0<>cb1343fd6f222d89ee140da7ff9b858e<>res://.godot/imported/p1_walk05.png-0cb087b96e479dd2a60c8eb69d738a53.ctex::
 ::res://assets/npcs/::1777286993
 p2_stand.png::CompressedTexture2D::5443933212939073324::1777286993::1777286993::1::::<><><>0<>0<>b8c0dea6098fab2ca0fcb63146829127<>res://.godot/imported/p2_stand.png-3e312428f6f5b61039d6b0ed85948706.ctex::
-::res://assets/tilesheets/::1777286993
+::res://assets/tilesheets/::1777294771
+bed2.png::CompressedTexture2D::3370241302793999093::1762285756::1777295164::1::::<><><>0<>0<>6f0eed06acf5a7d8f6e550c597557543<>res://.godot/imported/bed2.png-a422faf717efb0d7cdf8f1486cb85275.ctex::
 box.png::CompressedTexture2D::3454268912012628225::1777286993::1777286993::1::::<><><>0<>0<>09d3e5f36eab6f137d60a5a01c4e7d92<>res://.godot/imported/box.png-21cd66731648e3fcab65fd8c316db6c8.ctex::
+cabinets_LRK.png::CompressedTexture2D::5767455418354352748::1755874212::1777293937::1::::<><><>0<>0<>e4c2e353f044df607b6aca14aa1cbf97<>res://.godot/imported/cabinets_LRK.png-55482e1fd1677cd3c700048d2600fae8.ctex::
+decorations_LRK.png::CompressedTexture2D::8294107887111028437::1755554518::1777293937::1::::<><><>0<>0<>d4758ff204c7df00928b20933836a257<>res://.godot/imported/decorations_LRK.png-9ed7489ecb79e99dc20d76d02f85e08c.ctex::
+doorswindowsstairs_LRK.png::CompressedTexture2D::1208044463842443981::1755876194::1777293937::1::::<><><>0<>0<>c3c807be6eb89b4b39df4c11fd0a5396<>res://.godot/imported/doorswindowsstairs_LRK.png-7ce5f59650f228c8e9527cd2da72e8e9.ctex::
 door_closedMid.png::CompressedTexture2D::6977135887187616717::1777286993::1777286993::1::::<><><>0<>0<>d5923d87c6b62e17e1f8afe255843770<>res://.godot/imported/door_closedMid.png-0b662c006544d99df41a46cc35ecdde5.ctex::
 door_openMid.png::CompressedTexture2D::4828952322281613631::1777286993::1777286993::1::::<><><>0<>0<>60fc5a532c07042635408d92198711db<>res://.godot/imported/door_openMid.png-964c434a0b2b81498b62e0f2d520932b.ctex::
+Dungeon Tile Set.png::CompressedTexture2D::6463769637230508116::1653080323::1777295164::1::::<><><>0<>0<>826db6467190cb6e38a2c722b54c5529<>res://.godot/imported/Dungeon Tile Set.png-23d75737a4554aa213e222721ecd89bf.ctex::
+floorswalls_LRK.png::CompressedTexture2D::8745236802327682144::1755554518::1777295164::1::::<><><>0<>0<>5b4313ca7b9280439c39595038f7b5bb<>res://.godot/imported/floorswalls_LRK.png-3b6928565bc6941611001bbf7c461af2.ctex::
 grass.png::CompressedTexture2D::8809431786044923807::1777286993::1777286993::1::::<><><>0<>0<>b048b6ce316247aec8483e956d4848bd<>res://.godot/imported/grass.png-c70813d21bf7124f4147745c0b833ee0.ctex::
+kitchen_LRK.png::CompressedTexture2D::7061625329625916478::1755875022::1777293937::1::::<><><>0<>0<>dda3e05157b25f451912078d91d01229<>res://.godot/imported/kitchen_LRK.png-2c79c5f5747f2991571c04fa1b103545.ctex::
+livingroom_LRK.png::CompressedTexture2D::4238652535978466589::1755874214::1777293937::1::::<><><>0<>0<>7276ee95168bd2fead7f8defbdbf3ccb<>res://.godot/imported/livingroom_LRK.png-f9fc9cc114fa7db38636b291544f5c5a.ctex::
+rosebush004.png::CompressedTexture2D::1445773195945272045::1762290290::1777295164::1::::<><><>0<>0<>0d101ddc3688a097954487229b747b2a<>res://.godot/imported/rosebush004.png-50e0c03cff3b6456517ed16466c6f098.ctex::
 ::res://escenas/::1777286993
 bloques_niveles.tscn::PackedScene::1213851343397445878::1777286993::0::1::::<><><>0<>0<><>::uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://dxrmb3615pnpv::::res://assets/tilesheets/grass.png
 boton.tscn::PackedScene::8590734868727073212::1777286993::0::1::::<><><>0<>0<><>::uid://k2exwtaxogbb::::res://assets/botones/buttonGreen.png<>uid://dlnplopxj03ne::::res://scripts/boton.gd<>uid://ce7x4h2osenwc::::res://assets/botones/buttonGreen_pressed.png
@@ -43,16 +52,16 @@ puerta.tscn::PackedScene::652144828333733132::1777286993::0::1::::<><><>0<>0<><>
 ::res://fonts/::1777286993
 boucherie-flared.otf::FontFile::4093656489786399810::1777286993::1777286993::1::::<><><>0<>0<>2f3f4c54d1b5bb09e2558bf429d07108<>res://.godot/imported/boucherie-flared.otf-27ad1e7d3fb4981d3349d9ace5963a05.fontdata::
 EnchantedLand.otf::FontFile::646011791915370372::1777286993::1777286993::1::::<><><>0<>0<>31e0c49868898d55fa0f314f6b81bf0e<>res://.godot/imported/EnchantedLand.otf-f2f7b1ab5dd67111f8e4df8c18290950.fontdata::
-::res://niveles/::1777286993
-nivel_1.tscn::PackedScene::2816651030664653210::1777286993::0::1::::<><><>0<>0<><>::uid://dacehglf0jdun::::res://scripts/nivel_1.gd<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://dunofbjrm2a3m::::res://escenas/boton.tscn<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn
+::res://niveles/::1777287152
+Nivel_1.tscn::PackedScene::2816651030664653210::1777286993::0::1::::<><><>0<>0<><>::uid://dacehglf0jdun::::res://scripts/nivel_1.gd<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://dunofbjrm2a3m::::res://escenas/boton.tscn<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn
 Nivel_2.tscn::PackedScene::5371925762344161175::1777286993::0::1::::<><><>0<>0<><>::uid://dj40f6gqkqlvy::::res://scripts/nivel_2.gd<>uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://dunofbjrm2a3m::::res://escenas/boton.tscn<>uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn<>uid://bq15aep1xlksy::::res://escenas/palanca.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn
 Nivel_3.tscn::PackedScene::5028404735981784650::1777286993::0::1::::<><><>0<>0<><>::uid://kivhjj0twybg::::res://scripts/nivel_3.gd<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://dunofbjrm2a3m::::res://escenas/boton.tscn<>uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn<>uid://bvv5si3joe1ei::::res://escenas/fantasma.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn
 Nivel_4.tscn::PackedScene::446227779872160947::1777286993::0::1::::<><><>0<>0<><>::uid://c3yu3iidxtawh::::res://scripts/nivel_4.gd<>uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn<>uid://brlu7gad5cku6::::res://scripts/fantasma.gd<>uid://cpnjotlan27co::::res://assets/platformerGraphicsDeluxe_Updated/Player/p3_stand.png<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://bq15aep1xlksy::::res://escenas/palanca.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn
 Nivel_5.tscn::PackedScene::6879450962854499179::1777286993::0::1::::<><><>0<>0<><>::uid://rj87pfar3m51::::res://escenas/bloques_niveles.tscn<>uid://cw24e4ef8tlls::::res://scripts/nivel_5.gd<>uid://xwcda3vb7n2t::::res://escenas/jugador.tscn<>uid://ysvuletkvmho::::res://escenas/objetos_conseguidos.tscn<>uid://eo15yur42wmo::::res://escenas/NPC.tscn<>uid://jj5y26u5acsa::::res://escenas/puerta.tscn<>uid://dm1gw7q54w35j::::res://escenas/caja.tscn<>uid://dunofbjrm2a3m::::res://escenas/boton.tscn<>uid://bq15aep1xlksy::::res://escenas/palanca.tscn<>uid://hr50aae8yrwk::::res://escenas/objeto.tscn<>uid://brlu7gad5cku6::::res://scripts/fantasma.gd<>uid://cp7yujynyi3i4::::res://assets/enemigos/p3_stand.png
-::res://pantallas/::1777286993
+::res://pantallas/::1777287303
 ganaste.tscn::PackedScene::7409142484993423649::1777286993::0::1::::<><><>0<>0<><>::uid://dpevsy16w28f::::res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg<>res://ganaste.gd<>uid://byk86oqsep371::::res://fonts/boucherie-flared.otf
 niveles.tscn::PackedScene::7604710377378626643::1777286993::0::1::::<><><>0<>0<><>::uid://dmav4qr5uhgol::::res://icon.svg<>uid://bnus36eyjw8g4::::res://scripts/niveles.gd<>uid://dpevsy16w28f::::res://Nueva carpeta/fondos/47d522f4340e9f057dc53075ab1151d9.jpg<>uid://byk86oqsep371::::res://fonts/boucherie-flared.otf
-pantalla_inicio.tscn::PackedScene::3627142352845005125::1777286993::0::1::::<><><>0<>0<><>::uid://cmeldnh2dfmny::::res://scripts/pantalla_inicio.gd<>uid://crhu6ycbddecj::::res://Nueva carpeta/fondos/fondo_inicio.jpg<>uid://jg6yqef4mrhc::::res://fonts/EnchantedLand.otf<>uid://byk86oqsep371::::res://fonts/boucherie-flared.otf
+pantalla_inicio.tscn::PackedScene::3627142352845005125::1777287303::0::1::::<><><>0<>0<><>::uid://cmeldnh2dfmny::::res://scripts/pantalla_inicio.gd<>uid://crhu6ycbddecj::::res://assets/fondos/fondo_inicio.jpg<>uid://jg6yqef4mrhc::::res://fonts/EnchantedLand.otf<>uid://byk86oqsep371::::res://fonts/boucherie-flared.otf
 perdiste.tscn::PackedScene::8685713101921532632::1777286993::0::1::::<><><>0<>0<><>::uid://l5bxoxd8u5tp::::res://scripts/perdiste.gd<>uid://dpevsy16w28f::::res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg<>uid://byk86oqsep371::::res://fonts/boucherie-flared.otf
 ::res://scripts/::1777286993
 boton.gd::GDScript::7959107400081912742::1777286993::0::1::::<>StaticBody2D<><>0<>0<><>::
