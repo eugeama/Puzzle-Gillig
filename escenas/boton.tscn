@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dunofbjrm2a3m"]
 
-[ext_resource type="Texture2D" uid="uid://k2exwtaxogbb" path="res://assets/platformerGraphicsDeluxe_Updated/Items/buttonGreen.png" id="1_3lfx6"]
+[ext_resource type="Texture2D" uid="uid://k2exwtaxogbb" path="res://assets/botones/buttonGreen.png" id="1_3lfx6"]
 [ext_resource type="Script" uid="uid://dlnplopxj03ne" path="res://scripts/boton.gd" id="1_48mwk"]
-[ext_resource type="Texture2D" uid="uid://ce7x4h2osenwc" path="res://assets/platformerGraphicsDeluxe_Updated/Items/buttonGreen_pressed.png" id="2_6kupy"]
+[ext_resource type="Texture2D" uid="uid://ce7x4h2osenwc" path="res://assets/botones/buttonGreen_pressed.png" id="2_6kupy"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0gh5h"]
 animations = [{

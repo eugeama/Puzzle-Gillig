@@ -16,7 +16,8 @@ func objeto_conseguido() -> void:
 	
 func terminar_nivel() -> void:
 	if objetos_recolectados == total_objetos and jugador_en_area_npc:
-		get_tree().change_scene_to_file("res://escenas/ganaste.tscn")
+		AvanzarNivel.ganar_nivel(2)
+		get_tree().change_scene_to_file("res://pantallas/ganaste.tscn")
 	
 func _on_npc_jugador_cerca_npc() -> void:
 	jugador_en_area_npc = true

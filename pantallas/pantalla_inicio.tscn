@@ -1,0 +1,82 @@
+[gd_scene format=3 uid="uid://brxarfls3s4d2"]
+
+[ext_resource type="Script" uid="uid://cmeldnh2dfmny" path="res://scripts/pantalla_inicio.gd" id="1_rh0fq"]
+[ext_resource type="Texture2D" uid="uid://crhu6ycbddecj" path="res://Nueva carpeta/fondos/fondo_inicio.jpg" id="1_yo1tj"]
+[ext_resource type="FontFile" uid="uid://jg6yqef4mrhc" path="res://fonts/EnchantedLand.otf" id="2_o2dd3"]
+[ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="3_1obj2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o2dd3"]
+texture = ExtResource("1_yo1tj")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1obj2"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rh0fq"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="PantallaInicio" type="Control" unique_id=726040105]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rh0fq")
+
+[node name="Panel" type="Panel" parent="." unique_id=2103928660]
+layout_mode = 0
+offset_top = -22.999998
+offset_right = 40.0
+offset_bottom = 17.000002
+scale = Vector2(28.800003, 16.04)
+theme_override_styles/panel = SubResource("StyleBoxTexture_o2dd3")
+
+[node name="Label" type="Label" parent="." unique_id=1205045952]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 106.0
+offset_right = 898.0
+offset_bottom = 281.0
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("2_o2dd3")
+theme_override_font_sizes/font_size = 150
+text = "Ghost Mischief"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=225494410]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 343.0
+offset_right = 730.0
+offset_bottom = 517.0
+scale = Vector2(1.2, 1.2)
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=775839225]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/icon_max_width = 4
+theme_override_fonts/font = ExtResource("3_1obj2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_1obj2")
+text = "Jugar"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=972997499]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_1obj2")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_rh0fq")
+text = "Salir"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

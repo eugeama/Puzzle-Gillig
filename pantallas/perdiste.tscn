@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://dv0ooqhiu538w"]
+
+[ext_resource type="Script" uid="uid://l5bxoxd8u5tp" path="res://scripts/perdiste.gd" id="1_p5q6o"]
+[ext_resource type="Texture2D" uid="uid://dpevsy16w28f" path="res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg" id="1_rnh6x"]
+[ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="2_p5q6o"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2wofl"]
+texture = ExtResource("1_rnh6x")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gdbm2"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aham8"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Perdiste" type="Control" unique_id=1766545654]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p5q6o")
+
+[node name="Panel" type="Panel" parent="." unique_id=1759364936]
+layout_mode = 0
+offset_top = -22.999998
+offset_right = 40.0
+offset_bottom = 17.000002
+scale = Vector2(28.800003, 16.04)
+theme_override_styles/panel = SubResource("StyleBoxTexture_2wofl")
+
+[node name="Label" type="Label" parent="." unique_id=824150760]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 110.0
+offset_right = 911.0
+offset_bottom = 287.0
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("2_p5q6o")
+theme_override_font_sizes/font_size = 150
+text = "Perdiste :("
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1625331176]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 343.0
+offset_right = 730.0
+offset_bottom = 517.0
+scale = Vector2(1.2, 1.2)
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=302654960]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/icon_max_width = 4
+theme_override_fonts/font = ExtResource("2_p5q6o")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_gdbm2")
+text = "Reintentar"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1343418997]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_p5q6o")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_aham8")
+text = "Volver"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_button_3_pressed"]

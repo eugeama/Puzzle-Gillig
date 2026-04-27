@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://rj87pfar3m51"]
 
 [ext_resource type="PackedScene" uid="uid://dm1gw7q54w35j" path="res://escenas/caja.tscn" id="1_50uex"]
-[ext_resource type="Texture2D" uid="uid://by4xr0au3cqal" path="res://assets/platformerGraphicsDeluxe_Updated/Tiles/grass.png" id="2_56dng"]
+[ext_resource type="Texture2D" uid="uid://dxrmb3615pnpv" path="res://assets/tilesheets/grass.png" id="2_50uex"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_50uex"]
 scenes/1/scene = ExtResource("1_50uex")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3hw6"]
-texture = ExtResource("2_56dng")
+texture = ExtResource("2_50uex")
 margins = Vector2i(3, 3)
 use_texture_padding = false
 0:0/0 = 0

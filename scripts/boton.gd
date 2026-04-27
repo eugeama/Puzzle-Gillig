@@ -1,4 +1,4 @@
-extends Node2D
+extends StaticBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 var cuerpos_encima: int = 0
 

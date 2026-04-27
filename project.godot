@@ -11,13 +11,22 @@ config_version=5
 [application]
 
 config/name="ghost_mischief"
-run/main_scene="uid://cisg3kk6dqfwh"
+run/main_scene="uid://brxarfls3s4d2"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+AvanzarNivel="*uid://dkjpslxn856hf"
 
 [display]
 
 window/size/viewport_height=640
+
+[global_group]
+
+jugador=""
+objetos=""
 
 [input]
 

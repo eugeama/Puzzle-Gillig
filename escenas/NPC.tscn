@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://eo15yur42wmo"]
 
-[ext_resource type="Texture2D" uid="uid://5dq206west6r" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p2_stand.png" id="1_h5ilq"]
 [ext_resource type="Script" uid="uid://cdfsd2o02okpw" path="res://scripts/npc.gd" id="1_uqqb1"]
+[ext_resource type="Texture2D" uid="uid://cjtc1xb3b0ngu" path="res://assets/npcs/p2_stand.png" id="2_uqqb1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqqb1"]
 size = Vector2(40, 56)
@@ -14,7 +14,7 @@ script = ExtResource("1_uqqb1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=987058608]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_h5ilq")
+texture = ExtResource("2_uqqb1")
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2117211283]

@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://ddtbq2ls2kyyr"]
+
+[ext_resource type="Texture2D" uid="uid://dpevsy16w28f" path="res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg" id="1_7jo1c"]
+[ext_resource type="Script" path="res://ganaste.gd" id="1_65j6n"]
+[ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="2_65j6n"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_liaok"]
+texture = ExtResource("1_7jo1c")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cqpkp"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Ganaste" type="Control" unique_id=173147168]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_65j6n")
+
+[node name="Panel" type="Panel" parent="." unique_id=1677209548]
+layout_mode = 0
+offset_top = -22.999998
+offset_right = 40.0
+offset_bottom = 17.000002
+scale = Vector2(28.800003, 16.04)
+theme_override_styles/panel = SubResource("StyleBoxTexture_liaok")
+
+[node name="Label" type="Label" parent="." unique_id=869237615]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 102.0
+offset_right = 900.0
+offset_bottom = 279.0
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("2_65j6n")
+theme_override_font_sizes/font_size = 150
+text = "¡ Ganaste !"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=12377221]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 343.0
+offset_right = 730.0
+offset_bottom = 517.0
+scale = Vector2(1.2, 1.2)
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1131262375]
+layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/icon_max_width = 4
+theme_override_fonts/font = ExtResource("2_65j6n")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_cqpkp")
+text = "Continuar"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

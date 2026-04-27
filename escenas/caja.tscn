@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dm1gw7q54w35j"]
 
-[ext_resource type="Texture2D" uid="uid://crraiob2bya0e" path="res://assets/platformerGraphicsDeluxe_Updated/Tiles/box.png" id="1_hv7ok"]
+[ext_resource type="Texture2D" uid="uid://bphjkl1o4brxx" path="res://assets/tilesheets/box.png" id="1_hv7ok"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hv7ok"]
 size = Vector2(70, 70)

@@ -1,0 +1,15 @@
+extends Control
+
+func _ready() -> void:
+	pass
+	
+func _process(delta: float) -> void:
+	pass
+
+
+func _on_button_pressed() -> void:
+	get_tree().reload_current_scene()
+
+
+func _on_button_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://pantallas/pantalla_inicio.tscn")

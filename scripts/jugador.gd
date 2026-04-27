@@ -74,6 +74,14 @@ func soltar_caja()-> void:
 		await get_tree().physics_frame
 		veces_presionado=0
 		
+func muere() -> void:
+	set_physics_process(false)
+	get_tree().paused = true   
+	animated_sprite_2d.play("pierde")
+	await get_tree().create_timer(1.0).timeout
+	get_tree().paused = true
+	get_tree().change_scene_to_file("res://pantallas/perdiste.tscn")
+	
 func _on_rango_de_agarre_body_entered(body: Node2D) -> void:
 	if body is RigidBody2D and not sosteniendo:
 		agarre= true

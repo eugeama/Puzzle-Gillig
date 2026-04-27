@@ -1,21 +1,20 @@
 [gd_scene format=3 uid="uid://xwcda3vb7n2t"]
 
-[ext_resource type="Texture2D" uid="uid://m4qvbw3tyh3" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_walk/PNG/p1_walk03.png" id="1_cvhml"]
 [ext_resource type="Script" uid="uid://5e5ieynuo6kx" path="res://scripts/jugador.gd" id="1_gjfif"]
-[ext_resource type="Texture2D" uid="uid://cs30uvnyk52a4" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_walk/PNG/p1_walk05.png" id="2_btb33"]
-[ext_resource type="Texture2D" uid="uid://385euc3xhyky" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_duck.png" id="3_qw2bf"]
-[ext_resource type="Texture2D" uid="uid://djawcweke0u1h" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_hurt.png" id="4_g5h5a"]
-[ext_resource type="Texture2D" uid="uid://i5m4ab51wcy" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_stand.png" id="5_o2m60"]
-[ext_resource type="Texture2D" uid="uid://d3jha3e0karx2" path="res://assets/platformerGraphicsDeluxe_Updated/Player/p1_jump.png" id="6_hcpjn"]
+[ext_resource type="Texture2D" uid="uid://tn1b4p6vvd7n" path="res://assets/lucille/p1_walk03.png" id="2_ovq70"]
+[ext_resource type="Texture2D" uid="uid://b1e1rcig6myen" path="res://assets/lucille/p1_walk05.png" id="3_as36m"]
+[ext_resource type="Texture2D" uid="uid://ce0i40fhi5gda" path="res://assets/lucille/p1_duck.png" id="4_gjfif"]
+[ext_resource type="Texture2D" uid="uid://iyydhp2l10kg" path="res://assets/lucille/p1_hurt.png" id="5_4mp40"]
+[ext_resource type="Texture2D" uid="uid://cflmy1b3deltf" path="res://assets/lucille/p1_stand.png" id="6_as36m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xwd11"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_cvhml")
+"texture": ExtResource("2_ovq70")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_btb33")
+"texture": ExtResource("3_as36m")
 }],
 "loop": false,
 "name": &"caminando",
@@ -23,7 +22,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_qw2bf")
+"texture": ExtResource("4_gjfif")
 }],
 "loop": true,
 "name": &"mover caja",
@@ -31,26 +30,18 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_g5h5a")
+"texture": ExtResource("5_4mp40")
 }],
 "loop": true,
-"name": &"pegar",
+"name": &"pierde",
 "speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_o2m60")
+"texture": ExtResource("6_as36m")
 }],
 "loop": true,
 "name": &"quieta",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("6_hcpjn")
-}],
-"loop": true,
-"name": &"saltar",
 "speed": 5.0
 }]
 
@@ -69,8 +60,6 @@ position = Vector2(-2, 0)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_xwd11")
 animation = &"caminando"
-frame = 1
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888892625]
 position = Vector2(-2.5, 0)
