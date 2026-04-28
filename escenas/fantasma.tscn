@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bvv5si3joe1ei"]
 
 [ext_resource type="Script" uid="uid://brlu7gad5cku6" path="res://scripts/fantasma.gd" id="1_aoh5a"]
-[ext_resource type="Texture2D" uid="uid://cp7yujynyi3i4" path="res://assets/enemigos/p3_stand.png" id="2_aoh5a"]
+[ext_resource type="Texture2D" uid="uid://ee8t8o1netfu" path="res://assets/enemigos/0a84bd8a1545d2cfd8ff371fbc125e32-removebg-preview-removebg-preview.png" id="2_aoh5a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aoh5a"]
 size = Vector2(29, 40)
@@ -19,7 +19,7 @@ point_count = 8
 script = ExtResource("1_aoh5a")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1585628170]
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_aoh5a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1790333826]

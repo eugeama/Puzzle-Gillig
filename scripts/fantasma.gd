@@ -4,7 +4,7 @@ extends CharacterBody2D
 @onready var camino_a_seguir: PathFollow2D = $Path2D/PathFollow2D
 @onready var area: Area2D = $Area2D
 
-@export var rapidez: float = 200.0
+@export var rapidez: float = 400.0
 var ultima_posicion: Vector2
 
 signal perder

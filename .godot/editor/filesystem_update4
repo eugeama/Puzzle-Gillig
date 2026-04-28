@@ -1,7 +1,8 @@
-res://niveles/Nivel_2.tscn
-res://escenas/jugador.tscn
-res://escenas/fantasma.tscn
-res://niveles/Nivel_5.tscn
-res://escenas/NPC.tscn
 res://escenas/bloques_niveles.tscn
-res://niveles/Nivel_1.tscn
+res://niveles/Nivel_3.tscn
+res://escenas/bloques_pisos.tscn
+res://scripts/fantasma.gd
+res://escenas/fantasma.tscn
+res://scripts/perdiste.gd
+res://niveles/Nivel_4.tscn
+res://niveles/Nivel_5.tscn
