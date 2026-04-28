@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dm1gw7q54w35j"]
 
-[ext_resource type="Texture2D" uid="uid://bphjkl1o4brxx" path="res://assets/tilesheets/box.png" id="1_hv7ok"]
+[ext_resource type="Texture2D" uid="uid://d312ms42i0hxp" path="res://assets/tilesheets/pixel-art-open-crate-icon-260nw-2707030945-removebg-preview.png" id="1_hv7ok"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hv7ok"]
 size = Vector2(70, 70)
@@ -10,11 +10,12 @@ input_pickable = true
 gravity_scale = 0.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=590850290]
-scale = Vector2(0.6, 0.6)
+position = Vector2(0, 2.0000005)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_hv7ok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1015120746]
 light_mask = 3
 visibility_layer = 2
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.4, 0.4)
 shape = SubResource("RectangleShape2D_hv7ok")

@@ -46,10 +46,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4mp40"]
-size = Vector2(43, 56)
+size = Vector2(29, 37)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gjfif"]
-size = Vector2(58, 56)
+size = Vector2(43, 51)
 
 [node name="jugador" type="CharacterBody2D" unique_id=1401226523]
 motion_mode = 1
@@ -57,18 +57,18 @@ script = ExtResource("1_gjfif")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2104447874]
 position = Vector2(-2, 0)
-scale = Vector2(0.6, 0.6)
+scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_xwd11")
 animation = &"caminando"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888892625]
-position = Vector2(-2.5, 0)
+position = Vector2(-1.5, -1.5)
 shape = SubResource("RectangleShape2D_4mp40")
 
 [node name="rango_de_agarre" type="Area2D" parent="." unique_id=437697604]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="rango_de_agarre" unique_id=1481825814]
-position = Vector2(-3, 0)
+position = Vector2(-1.5, -1.5)
 shape = SubResource("RectangleShape2D_gjfif")
 
 [node name="agarre_caja" type="Marker2D" parent="." unique_id=1002698062]
