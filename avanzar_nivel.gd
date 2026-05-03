@@ -1,5 +1,6 @@
 extends Node
 var nivel_desbloqueado: int = 1
+var escena_actual: String = ""
 
 func _ready() -> void:
 	pass

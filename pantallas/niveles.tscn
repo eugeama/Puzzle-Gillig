@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://dgl1p682uchcd"]
 
-[ext_resource type="Texture2D" uid="uid://dmav4qr5uhgol" path="res://icon.svg" id="1_rgmji"]
 [ext_resource type="Script" uid="uid://bnus36eyjw8g4" path="res://scripts/niveles.gd" id="1_wipyf"]
-[ext_resource type="Texture2D" uid="uid://dpevsy16w28f" path="res://Nueva carpeta/fondos/47d522f4340e9f057dc53075ab1151d9.jpg" id="2_bf1rl"]
+[ext_resource type="Texture2D" uid="uid://dpevsy16w28f" path="res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg" id="2_bf1rl"]
 [ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="3_8v7m0"]
+[ext_resource type="Texture2D" uid="uid://75r1vvys3c7d" path="res://assets/tilesheets/d8ca82723b2d945c79ac4dfa0f9000c8-removebg-preview.png" id="3_bf1rl"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kj1xr"]
 texture = ExtResource("2_bf1rl")
@@ -32,35 +32,120 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -392.0
-offset_top = -112.0
-offset_right = 392.0
-offset_bottom = 244.0
+offset_left = -302.0
+offset_top = -142.0
+offset_right = 1792.0
+offset_bottom = 1010.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/h_separation = 200
-theme_override_constants/v_separation = 100
+scale = Vector2(0.3, 0.3)
+theme_override_constants/h_separation = 300
+theme_override_constants/v_separation = 150
 columns = 3
 
 [node name="TextureButton" type="TextureButton" parent="GridContainer" unique_id=1903879813]
 layout_mode = 2
-texture_normal = ExtResource("1_rgmji")
+texture_normal = ExtResource("3_bf1rl")
+
+[node name="Label" type="Label" parent="GridContainer/TextureButton" unique_id=1596674978]
+layout_mode = 0
+offset_left = 181.99994
+offset_top = 113.33332
+offset_right = 809.99994
+offset_bottom = 706.3333
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("3_8v7m0")
+theme_override_font_sizes/font_size = 250
+text = "1
+"
 
 [node name="TextureButton2" type="TextureButton" parent="GridContainer" unique_id=1854725432]
 layout_mode = 2
-texture_normal = ExtResource("1_rgmji")
+texture_normal = ExtResource("3_bf1rl")
+
+[node name="Label" type="Label" parent="GridContainer/TextureButton2" unique_id=880516531]
+layout_mode = 0
+offset_left = 181.99994
+offset_top = 113.33332
+offset_right = 809.99994
+offset_bottom = 706.3333
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("3_8v7m0")
+theme_override_font_sizes/font_size = 250
+text = "2
+"
 
 [node name="TextureButton3" type="TextureButton" parent="GridContainer" unique_id=74791177]
 layout_mode = 2
-texture_normal = ExtResource("1_rgmji")
+texture_normal = ExtResource("3_bf1rl")
+
+[node name="Label" type="Label" parent="GridContainer/TextureButton3" unique_id=1565762643]
+layout_mode = 0
+offset_left = 181.99994
+offset_top = 113.33332
+offset_right = 809.99994
+offset_bottom = 706.3333
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("3_8v7m0")
+theme_override_font_sizes/font_size = 250
+text = "3
+"
 
 [node name="TextureButton4" type="TextureButton" parent="GridContainer" unique_id=1721053736]
 layout_mode = 2
-texture_normal = ExtResource("1_rgmji")
+texture_normal = ExtResource("3_bf1rl")
+
+[node name="Label" type="Label" parent="GridContainer/TextureButton4" unique_id=106868007]
+layout_mode = 0
+offset_left = 181.99994
+offset_top = 113.33332
+offset_right = 809.99994
+offset_bottom = 706.3333
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("3_8v7m0")
+theme_override_font_sizes/font_size = 250
+text = "4"
 
 [node name="TextureButton5" type="TextureButton" parent="GridContainer" unique_id=2029090107]
 layout_mode = 2
-texture_normal = ExtResource("1_rgmji")
+texture_normal = ExtResource("3_bf1rl")
+
+[node name="Label" type="Label" parent="GridContainer/TextureButton5" unique_id=77583690]
+layout_mode = 0
+offset_left = 181.99994
+offset_top = 113.33332
+offset_right = 809.99994
+offset_bottom = 706.3333
+theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
+theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_constants/shadow_offset_x = 17
+theme_override_constants/shadow_offset_y = 17
+theme_override_constants/outline_size = 5
+theme_override_constants/shadow_outline_size = 17
+theme_override_fonts/font = ExtResource("3_8v7m0")
+theme_override_font_sizes/font_size = 250
+text = "5
+"
 
 [node name="Label" type="Label" parent="." unique_id=690763996]
 layout_mode = 1

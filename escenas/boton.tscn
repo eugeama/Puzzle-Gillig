@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://dunofbjrm2a3m"]
 
-[ext_resource type="Texture2D" uid="uid://k2exwtaxogbb" path="res://assets/botones/buttonGreen.png" id="1_3lfx6"]
 [ext_resource type="Script" uid="uid://dlnplopxj03ne" path="res://scripts/boton.gd" id="1_48mwk"]
-[ext_resource type="Texture2D" uid="uid://ce7x4h2osenwc" path="res://assets/botones/buttonGreen_pressed.png" id="2_6kupy"]
+[ext_resource type="Texture2D" uid="uid://bpdkl5sy3w8av" path="res://assets/botones/pixel-art-red-button-inactive-260n6w-1062296483-removebg-preview.png" id="2_48mwk"]
+[ext_resource type="Texture2D" uid="uid://quw43d2ms8s4" path="res://assets/botones/pixel-art-red-button-inactive-260nw-106hy2296483-removebg-preview.png" id="3_jyr1w"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0gh5h"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_3lfx6")
+"texture": ExtResource("2_48mwk")
 }],
 "loop": true,
 "name": &"sin_tocar",
@@ -16,7 +16,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_6kupy")
+"texture": ExtResource("3_jyr1w")
 }],
 "loop": true,
 "name": &"tocado",
@@ -33,7 +33,7 @@ size = Vector2(36, 24)
 script = ExtResource("1_48mwk")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1609534900]
-scale = Vector2(0.5, 0.5)
+scale = Vector2(0.3, 0.3)
 sprite_frames = SubResource("SpriteFrames_0gh5h")
 animation = &"sin_tocar"
 

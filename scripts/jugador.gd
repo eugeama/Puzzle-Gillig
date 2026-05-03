@@ -79,7 +79,8 @@ func muere() -> void:
 	get_tree().paused = true   
 	animated_sprite_2d.play("pierde")
 	await get_tree().create_timer(1.0).timeout
-	get_tree().paused = true
+	AvanzarNivel.escena_actual = get_tree().current_scene.scene_file_path
+	get_tree().paused = false
 	get_tree().change_scene_to_file("res://pantallas/perdiste.tscn")
 	
 func _on_rango_de_agarre_body_entered(body: Node2D) -> void:
