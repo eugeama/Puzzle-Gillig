@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://rj87pfar3m51" path="res://escenas/bloques_niveles.tscn" id="1_usgdu"]
 [ext_resource type="Script" uid="uid://cw24e4ef8tlls" path="res://scripts/nivel_5.gd" id="1_wy81g"]
 [ext_resource type="PackedScene" uid="uid://xwcda3vb7n2t" path="res://escenas/jugador.tscn" id="2_40txv"]
-[ext_resource type="PackedScene" uid="uid://cdaueomq2egrt" path="res://escenas/bloques_pisos.tscn" id="2_y0ifd"]
+[ext_resource type="PackedScene" path="res://escenas/bloques_pisos.tscn" id="2_y0ifd"]
 [ext_resource type="PackedScene" uid="uid://ysvuletkvmho" path="res://escenas/objetos_conseguidos.tscn" id="3_hywge"]
 [ext_resource type="PackedScene" uid="uid://eo15yur42wmo" path="res://escenas/NPC.tscn" id="4_wy81g"]
 [ext_resource type="PackedScene" uid="uid://dm1gw7q54w35j" path="res://escenas/caja.tscn" id="6_hihdj"]

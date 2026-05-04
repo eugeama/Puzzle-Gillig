@@ -1,13 +1,28 @@
 [gd_scene format=3 uid="uid://ddtbq2ls2kyyr"]
 
 [ext_resource type="Texture2D" uid="uid://dpevsy16w28f" path="res://assets/fondos/47d522f4340e9f057dc53075ab1151d9.jpg" id="1_7jo1c"]
-[ext_resource type="Script" path="res://ganaste.gd" id="1_65j6n"]
+[ext_resource type="Script" uid="uid://br4gxfu87xrnb" path="res://ganaste.gd" id="1_65j6n"]
 [ext_resource type="FontFile" uid="uid://byk86oqsep371" path="res://fonts/boucherie-flared.otf" id="2_65j6n"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_liaok"]
 texture = ExtResource("1_7jo1c")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65j6n"]
+bg_color = Color(0.7058824, 0.6509804, 0.44313726, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_liaok"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 20
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cqpkp"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -36,8 +51,8 @@ offset_left = 272.0
 offset_top = 102.0
 offset_right = 900.0
 offset_bottom = 279.0
-theme_override_colors/font_color = Color(0.6785517, 0.49729842, 0.5261079, 1)
-theme_override_colors/font_outline_color = Color(0.5530774, 0.32957777, 0.26936427, 1)
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
+theme_override_colors/font_outline_color = Color(0.966044, 0.90500766, 0.88852865, 1)
 theme_override_constants/shadow_offset_x = 17
 theme_override_constants/shadow_offset_y = 17
 theme_override_constants/outline_size = 5
@@ -57,11 +72,14 @@ theme_override_constants/separation = 20
 
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=1131262375]
 layout_mode = 2
+theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
 theme_override_constants/h_separation = 20
 theme_override_constants/icon_max_width = 4
 theme_override_fonts/font = ExtResource("2_65j6n")
 theme_override_font_sizes/font_size = 50
-theme_override_styles/normal = SubResource("StyleBoxFlat_cqpkp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_65j6n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_liaok")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cqpkp")
 text = "Continuar"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

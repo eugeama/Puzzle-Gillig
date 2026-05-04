@@ -1,20 +1,19 @@
 [gd_scene format=3 uid="uid://xwcda3vb7n2t"]
 
 [ext_resource type="Script" uid="uid://5e5ieynuo6kx" path="res://scripts/jugador.gd" id="1_gjfif"]
-[ext_resource type="Texture2D" uid="uid://tn1b4p6vvd7n" path="res://assets/lucille/p1_walk03.png" id="2_ovq70"]
-[ext_resource type="Texture2D" uid="uid://b1e1rcig6myen" path="res://assets/lucille/p1_walk05.png" id="3_as36m"]
-[ext_resource type="Texture2D" uid="uid://ce0i40fhi5gda" path="res://assets/lucille/p1_duck.png" id="4_gjfif"]
-[ext_resource type="Texture2D" uid="uid://iyydhp2l10kg" path="res://assets/lucille/p1_hurt.png" id="5_4mp40"]
-[ext_resource type="Texture2D" uid="uid://cflmy1b3deltf" path="res://assets/lucille/p1_stand.png" id="6_as36m"]
+[ext_resource type="Texture2D" uid="uid://co6pygn07goja" path="res://assets/lucille/Captura_desde_2026-05-04_10-30-15-removebg-preview.png" id="2_as36m"]
+[ext_resource type="Texture2D" uid="uid://b852fku8m7pua" path="res://assets/lucille/Captura_desde_2026-05-04_10-35-57-removebg-preview.png" id="3_gjfif"]
+[ext_resource type="Texture2D" uid="uid://diqfdyt2p3hrg" path="res://assets/lucille/Captura_desde_2026-05-04_10-29-26-removebg-preview.png" id="4_ovq70"]
+[ext_resource type="Texture2D" uid="uid://b1pwn55i870nw" path="res://assets/lucille/Captura_desde_2026-05-04_10-36-21-removebg-preview.png" id="6_4mp40"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xwd11"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_ovq70"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_ovq70")
+"texture": ExtResource("2_as36m")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_as36m")
+"texture": ExtResource("3_gjfif")
 }],
 "loop": false,
 "name": &"caminando",
@@ -22,15 +21,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_gjfif")
-}],
-"loop": true,
-"name": &"mover caja",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("5_4mp40")
+"texture": ExtResource("4_ovq70")
 }],
 "loop": true,
 "name": &"pierde",
@@ -38,7 +29,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("6_as36m")
+"texture": ExtResource("6_4mp40")
 }],
 "loop": true,
 "name": &"quieta",
@@ -56,9 +47,9 @@ motion_mode = 1
 script = ExtResource("1_gjfif")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=2104447874]
-position = Vector2(-2, 0)
-scale = Vector2(0.4, 0.4)
-sprite_frames = SubResource("SpriteFrames_xwd11")
+position = Vector2(-1.0000001, -0.9999999)
+scale = Vector2(0.18, 0.18)
+sprite_frames = SubResource("SpriteFrames_ovq70")
 animation = &"caminando"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=888892625]

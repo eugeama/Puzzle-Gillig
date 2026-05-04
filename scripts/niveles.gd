@@ -36,3 +36,7 @@ func _on_texture_button_4_pressed() -> void:
 
 func _on_texture_button_5_pressed() -> void:
 	get_tree().change_scene_to_file("res://niveles/Nivel_5.tscn")
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://pantallas/pantalla_inicio.tscn")

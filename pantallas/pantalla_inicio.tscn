@@ -9,12 +9,42 @@
 texture = ExtResource("2_rh0fq")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1obj2"]
+bg_color = Color(0.70536953, 0.6490366, 0.44436693, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3gsx"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_av8r6"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rh0fq"]
+bg_color = Color(0.7058824, 0.6509804, 0.44313726, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7ban"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pu6r4"]
+bg_color = Color(0.5254902, 0.47843137, 0.29803923, 1)
 corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
@@ -44,7 +74,7 @@ offset_top = 106.0
 offset_right = 898.0
 offset_bottom = 281.0
 theme_override_colors/font_color = Color(1, 1, 0.9098039, 1)
-theme_override_colors/font_outline_color = Color(0.9019608, 0.7372549, 0.5372549, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/shadow_offset_x = 17
 theme_override_constants/shadow_offset_y = 17
 theme_override_constants/outline_size = 5
@@ -69,6 +99,8 @@ theme_override_constants/icon_max_width = 4
 theme_override_fonts/font = ExtResource("3_1obj2")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_1obj2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v3gsx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_av8r6")
 text = "Jugar"
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=972997499]
@@ -76,6 +108,8 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("3_1obj2")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_rh0fq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_w7ban")
+theme_override_styles/hover = SubResource("StyleBoxFlat_pu6r4")
 text = "Salir"
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

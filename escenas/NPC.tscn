@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://eo15yur42wmo"]
 
 [ext_resource type="Script" uid="uid://cdfsd2o02okpw" path="res://scripts/npc.gd" id="1_uqqb1"]
-[ext_resource type="Texture2D" uid="uid://cjtc1xb3b0ngu" path="res://assets/npcs/p2_stand.png" id="2_uqqb1"]
+[ext_resource type="Texture2D" uid="uid://colhgx15qeenk" path="res://assets/npcs/Captura_desde_2026-05-04_16-10-15-removebg-preview.png" id="2_uqqb1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uqqb1"]
 size = Vector2(27, 38)
@@ -13,7 +13,7 @@ size = Vector2(41, 48)
 script = ExtResource("1_uqqb1")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=987058608]
-scale = Vector2(0.4, 0.4)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("2_uqqb1")
 flip_h = true
 

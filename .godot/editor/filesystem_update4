@@ -1,8 +1,6 @@
+res://escenas/jugador.tscn
+res://escenas/NPC.tscn
 res://pantallas/pantalla_inicio.tscn
+res://pantallas/ganaste.tscn
+res://pantallas/perdiste.tscn
 res://pantallas/niveles.tscn
-res://niveles/Nivel_5.tscn
-res://scripts/fantasma.gd
-res://niveles/Nivel_4.tscn
-res://escenas/palanca.tscn
-res://escenas/boton.tscn
-res://niveles/Nivel_3.tscn
